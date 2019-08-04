@@ -511,23 +511,23 @@ void UBApplication::decorateActionMenu(QAction* action)
             menu->addAction(mainWindow->actionCut);
             menu->addAction(mainWindow->actionCopy);
             menu->addAction(mainWindow->actionPaste);
-            menu->addAction(mainWindow->actionHideApplication);
-            menu->addAction(mainWindow->actionSleep);
+//            menu->addAction(mainWindow->actionHideApplication);
+//            menu->addAction(mainWindow->actionSleep);
 
-            menu->addSeparator();
-            menu->addAction(mainWindow->actionOpenTutorial);
+//            menu->addSeparator();
+//            menu->addAction(mainWindow->actionOpenTutorial);
             menu->addSeparator();
             menu->addAction(mainWindow->actionPreferences);
-            menu->addAction(mainWindow->actionMultiScreen);
-            if (!UBSettings::settings()->appHideCheckForSoftwareUpdate->get().toBool())
-                menu->addAction(mainWindow->actionCheckUpdate);
+//            menu->addAction(mainWindow->actionMultiScreen);
+//            if (!UBSettings::settings()->appHideCheckForSoftwareUpdate->get().toBool())
+//                menu->addAction(mainWindow->actionCheckUpdate);
             menu->addSeparator();
 
-            menu->addAction(mainWindow->actionPodcast);
+//            menu->addAction(mainWindow->actionPodcast);
             mainWindow->actionPodcast->setText(tr("Podcast"));
 
             menu->addSeparator();
-            menu->addAction(mainWindow->actionQuit);
+//            menu->addAction(mainWindow->actionQuit);
 
             tb->setMenu(menu);
         }

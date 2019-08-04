@@ -8,14 +8,14 @@
 ; NOTE: The value of AppId uniquely identifies this application.
 ; Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppId={{8CCA6AC7-BBF9-4DD2-8E70-A907E0FCA38F}}
-AppName=OpenBoard
+AppId={{F07785D3-1B74-48D5-AE9A-B8418016CBE6}}
+AppName=电子白板
 AppVersion={#ApplicationVersion}
-AppVerName=OpenBoard {#ApplicationVersion}
-UninstallDisplayName=OpenBoard
+AppVerName=电子白板 {#ApplicationVersion}
+UninstallDisplayName=电子白板
 
 
-AppPublisher=Open Education Foundation
+AppPublisher=果视科技
 
 AppPublisherURL=http://www.oe-f.org
 AppSupportURL=http://www.openboard.org
@@ -133,22 +133,8 @@ Source: "{#QtLibs}\Qt5Gui.dll"; DestDir: "{app}"
 Source: "{#ProjectRoot}\resources\windows\xpdfrc"; DestDir: "{app}"; Flags: ignoreversion
 Source: "{#ProjectRoot}\resources\fonts\*"; DestDir: "{app}\fonts"; Flags: ignoreversion
 
-[Icons]
-Name: "{group}\OpenBoard"; Filename: "{app}\OpenBoard.exe"
-Name: "{group}\{cm:UninstallProgram,OpenBoard}"; Filename: "{uninstallexe}"
-Name: "{commondesktop}\OpenBoard"; Filename: "{app}\OpenBoard.exe"; Tasks: desktopicon
-Name: "{userappdata}\Microsoft\Internet Explorer\Quick Launch\OpenBoard"; Filename: "{app}\OpenBoard.exe"; Tasks: quicklaunchicon
 
 [Registry]
-Root: HKCR; Subkey: ".ubz"; ValueType: string; ValueName: ""; ValueData: "OpenBoardFile"; Flags: uninsdeletevalue
-Root: HKCR; Subkey: "OpenBoardFile"; ValueType: string; ValueName: ""; ValueData: "OpenBoard document"; Flags: uninsdeletekey
-Root: HKCR; Subkey: "OpenBoardFile\DefaultIcon"; ValueType: string; ValueName: ""; ValueData: "{app}\OpenBoard.exe,1"
-Root: HKCR; Subkey: "OpenBoardFile\shell\open\command"; ValueType: string; ValueName: ""; ValueData: """{app}\OpenBoard.exe"" ""%1"""
-
-Root: HKCR; Subkey: ".ubx"; ValueType: string; ValueName: ""; ValueData: "OpenBoardFileSet"; Flags: uninsdeletevalue
-Root: HKCR; Subkey: "OpenBoardFileSet"; ValueType: string; ValueName: ""; ValueData: "OpenBoard document set"; Flags: uninsdeletekey
-Root: HKCR; Subkey: "OpenBoardFileSet\DefaultIcon"; ValueType: string; ValueName: ""; ValueData: "{app}\OpenBoard.exe,1"
-Root: HKCR; Subkey: "OpenBoardFileSet\shell\open\command"; ValueType: string; ValueName: ""; ValueData: """{app}\OpenBoard.exe"" ""%1"""
 
 Root: HKLM; Subkey: "SOFTWARE\OpenBoard"; ValueType: string; ValueName: "Client application"; ValueData: "{app}\OpenBoard.exe"; Flags: uninsdeletevalue; Check: isProcessorNotX64
 Root: HKLM; Subkey: "SOFTWARE\OpenBoard"; ValueType: dword; ValueName: "Transfer mode"; ValueData: "0"; Flags: uninsdeletevalue; Check: isProcessorNotX64

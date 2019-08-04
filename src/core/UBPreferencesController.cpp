@@ -144,8 +144,8 @@ void UBPreferencesController::wire()
     connect(mPreferencesUI->keyboardPaletteKeyButtonSize, SIGNAL(currentIndexChanged(const QString &)), settings->boardKeyboardPaletteKeyBtnSize, SLOT(setString(const QString &)));
     connect(mPreferencesUI->startModeComboBox, SIGNAL(currentIndexChanged(int)), settings->appStartMode, SLOT(setInt(int)));
 
-    connect(mPreferencesUI->useExternalBrowserCheckBox, SIGNAL(clicked(bool)), settings->webUseExternalBrowser, SLOT(setBool(bool)));
-    connect(mPreferencesUI->displayBrowserPageCheckBox, SIGNAL(clicked(bool)), settings->webShowPageImmediatelyOnMirroredScreen, SLOT(setBool(bool)));
+//    connect(mPreferencesUI->useExternalBrowserCheckBox, SIGNAL(clicked(bool)), settings->webUseExternalBrowser, SLOT(setBool(bool)));
+//    connect(mPreferencesUI->displayBrowserPageCheckBox, SIGNAL(clicked(bool)), settings->webShowPageImmediatelyOnMirroredScreen, SLOT(setBool(bool)));
     connect(mPreferencesUI->swapControlAndDisplayScreensCheckBox, SIGNAL(clicked(bool)), settings->swapControlAndDisplayScreens, SLOT(setBool(bool)));
     connect(mPreferencesUI->swapControlAndDisplayScreensCheckBox, SIGNAL(clicked(bool)), UBApplication::applicationController->displayManager(), SLOT(reinitScreens(bool)));
     if (settings->appHideSwapDisplayScreens->get().toBool())
@@ -255,9 +255,9 @@ void UBPreferencesController::wire()
     connect(mMarkerProperties->opacitySlider, SIGNAL(valueChanged(int)), this, SLOT(opacitySliderChanged(int)));
 
     // about tab
-    connect(mPreferencesUI->checkSoftwareUpdateAtLaunchCheckBox, SIGNAL(clicked(bool)), settings->appEnableAutomaticSoftwareUpdates, SLOT(setBool(bool)));
+//    connect(mPreferencesUI->checkSoftwareUpdateAtLaunchCheckBox, SIGNAL(clicked(bool)), settings->appEnableAutomaticSoftwareUpdates, SLOT(setBool(bool)));
 
-    connect(mPreferencesUI->checkOpenSankoreAtStartup, SIGNAL(clicked(bool)), settings->appLookForOpenSankoreInstall, SLOT(setBool(bool)));
+//    connect(mPreferencesUI->checkOpenSankoreAtStartup, SIGNAL(clicked(bool)), settings->appLookForOpenSankoreInstall, SLOT(setBool(bool)));
 }
 
 void UBPreferencesController::init()
@@ -265,8 +265,8 @@ void UBPreferencesController::init()
     UBSettings* settings = UBSettings::settings();
 
     // about tab
-    mPreferencesUI->checkSoftwareUpdateAtLaunchCheckBox->setChecked(settings->appEnableAutomaticSoftwareUpdates->get().toBool());
-    mPreferencesUI->checkOpenSankoreAtStartup->setChecked(settings->appLookForOpenSankoreInstall->get().toBool());
+//    mPreferencesUI->checkSoftwareUpdateAtLaunchCheckBox->setChecked(settings->appEnableAutomaticSoftwareUpdates->get().toBool());
+//    mPreferencesUI->checkOpenSankoreAtStartup->setChecked(settings->appLookForOpenSankoreInstall->get().toBool());
 
     // display tab
     for(int i=0; i<mPreferencesUI->keyboardPaletteKeyButtonSize->count(); i++)
@@ -282,13 +282,13 @@ void UBPreferencesController::init()
 
     mPreferencesUI->startModeComboBox->setCurrentIndex(settings->appStartMode->get().toInt());
 
-    mPreferencesUI->useExternalBrowserCheckBox->setChecked(settings->webUseExternalBrowser->get().toBool());
-    mPreferencesUI->displayBrowserPageCheckBox->setChecked(settings->webShowPageImmediatelyOnMirroredScreen->get().toBool());
+//    mPreferencesUI->useExternalBrowserCheckBox->setChecked(settings->webUseExternalBrowser->get().toBool());
+//    mPreferencesUI->displayBrowserPageCheckBox->setChecked(settings->webShowPageImmediatelyOnMirroredScreen->get().toBool());
     mPreferencesUI->swapControlAndDisplayScreensCheckBox->setChecked(settings->swapControlAndDisplayScreens->get().toBool());
-    mPreferencesUI->webHomePage->setText(settings->webHomePage->get().toString());
+//    mPreferencesUI->webHomePage->setText(settings->webHomePage->get().toString());
 
-    mPreferencesUI->proxyUsername->setText(settings->proxyUsername());
-    mPreferencesUI->proxyPassword->setText(settings->proxyPassword());
+//    mPreferencesUI->proxyUsername->setText(settings->proxyUsername());
+//    mPreferencesUI->proxyPassword->setText(settings->proxyPassword());
 
     mPreferencesUI->toolbarAtTopRadioButton->setChecked(settings->appToolBarPositionedAtTop->get().toBool());
     mPreferencesUI->toolbarAtBottomRadioButton->setChecked(!settings->appToolBarPositionedAtTop->get().toBool());
@@ -317,11 +317,11 @@ void UBPreferencesController::init()
 void UBPreferencesController::close()
 {
     //web
-    QString homePage = mPreferencesUI->webHomePage->text();
+//    QString homePage = mPreferencesUI->webHomePage->text();
 
-    UBSettings::settings()->webHomePage->set(homePage);
-    UBSettings::settings()->setProxyUsername(mPreferencesUI->proxyUsername->text());
-    UBSettings::settings()->setProxyPassword(mPreferencesUI->proxyPassword->text());
+//    UBSettings::settings()->webHomePage->set(homePage);
+//    UBSettings::settings()->setProxyUsername(mPreferencesUI->proxyUsername->text());
+//    UBSettings::settings()->setProxyPassword(mPreferencesUI->proxyPassword->text());
 
     mPreferencesWindow->accept();
 }
@@ -390,23 +390,23 @@ void UBPreferencesController::defaultSettings()
             mMarkerProperties->darkBackgroundColorPickers[i]->setSelectedColorIndex(darkBackgroundSelectedColors.indexOf(settings->markerColors(true).at(i)));
         }
     }
-    else if (mPreferencesUI->mainTabWidget->currentWidget() == mPreferencesUI->aboutTab)
-    {
-        bool defaultValue = settings->appEnableAutomaticSoftwareUpdates->reset().toBool();
-        mPreferencesUI->checkSoftwareUpdateAtLaunchCheckBox->setChecked(defaultValue);
+//    else if (mPreferencesUI->mainTabWidget->currentWidget() == mPreferencesUI->aboutTab)
+//    {
+//        bool defaultValue = settings->appEnableAutomaticSoftwareUpdates->reset().toBool();
+//        mPreferencesUI->checkSoftwareUpdateAtLaunchCheckBox->setChecked(defaultValue);
 
-        defaultValue = settings->appLookForOpenSankoreInstall->reset().toBool();
-        mPreferencesUI->checkOpenSankoreAtStartup->setChecked(defaultValue);
+//        defaultValue = settings->appLookForOpenSankoreInstall->reset().toBool();
+//        mPreferencesUI->checkOpenSankoreAtStartup->setChecked(defaultValue);
 
-    }
-    else if(mPreferencesUI->mainTabWidget->currentWidget() == mPreferencesUI->networkTab){
-        bool defaultValue = settings->webUseExternalBrowser->reset().toBool();
-        mPreferencesUI->useExternalBrowserCheckBox->setChecked(defaultValue);
-        defaultValue = settings->webShowPageImmediatelyOnMirroredScreen->reset().toBool();
-        mPreferencesUI->displayBrowserPageCheckBox->setChecked(defaultValue);
+//    }
+//    else if(mPreferencesUI->mainTabWidget->currentWidget() == mPreferencesUI->networkTab){
+//        bool defaultValue = settings->webUseExternalBrowser->reset().toBool();
+//        mPreferencesUI->useExternalBrowserCheckBox->setChecked(defaultValue);
+//        defaultValue = settings->webShowPageImmediatelyOnMirroredScreen->reset().toBool();
+//        mPreferencesUI->displayBrowserPageCheckBox->setChecked(defaultValue);
 
-        mPreferencesUI->webHomePage->setText(settings->webHomePage->reset().toString());
-    }
+//        mPreferencesUI->webHomePage->setText(settings->webHomePage->reset().toString());
+//    }
     else if(mPreferencesUI->mainTabWidget->currentWidget() == mPreferencesUI->gridTab)
     {
         settings->boardCrossColorDarkBackground->reset();

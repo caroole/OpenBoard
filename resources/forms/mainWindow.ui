@@ -70,7 +70,6 @@
    <addaction name="separator"/>
    <addaction name="actionErase"/>
    <addaction name="actionBoard"/>
-   <addaction name="actionWeb"/>
    <addaction name="actionDocument"/>
    <addaction name="actionDesktop"/>
    <addaction name="actionMenu"/>
@@ -115,7 +114,6 @@
    <addaction name="actionWebSmaller"/>
    <addaction name="separator"/>
    <addaction name="actionBoard"/>
-   <addaction name="actionWeb"/>
    <addaction name="actionDocument"/>
    <addaction name="actionDesktop"/>
    <addaction name="actionMenu"/>
@@ -164,7 +162,6 @@
    <addaction name="actionAddToWorkingDocument"/>
    <addaction name="actionDocumentAdd"/>
    <addaction name="actionBoard"/>
-   <addaction name="actionWeb"/>
    <addaction name="actionDocument"/>
    <addaction name="actionDesktop"/>
    <addaction name="actionMenu"/>
@@ -598,10 +595,10 @@
      <normaloff>:/images/toolbar/menu.png</normaloff>:/images/toolbar/menu.png</iconset>
    </property>
    <property name="text">
-    <string>OpenBoard</string>
+    <string>电子白板</string>
    </property>
    <property name="toolTip">
-    <string>OpenBoard</string>
+    <string>电子白板</string>
    </property>
   </action>
   <action name="actionDesktop">

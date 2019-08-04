@@ -793,11 +793,11 @@
     </message>
     <message>
         <source>Ruled Light Background</source>
-        <translation type="unfinished"></translation>
+        <translation>白色横格背景</translation>
     </message>
     <message>
         <source>Ruled Dark Background</source>
-        <translation type="unfinished"></translation>
+        <translation>黑色横格背景</translation>
     </message>
     <message>
         <source>Open Tutorial</source>
@@ -809,7 +809,7 @@
     </message>
     <message>
         <source>Reset grid size</source>
-        <translation type="unfinished"></translation>
+        <translation>恢复默认</translation>
     </message>
 </context>
 <context>
@@ -907,7 +907,7 @@
     <name>UBBackgroundPalette</name>
     <message>
         <source>Grid size</source>
-        <translation type="unfinished"></translation>
+        <translation>栅格大小</translation>
     </message>
 </context>
 <context>
@@ -958,7 +958,7 @@
     </message>
     <message>
         <source>Saving document...</source>
-        <translation type="unfinished"></translation>
+        <translation>保存文档</translation>
     </message>
     <message>
         <source>Document has just been saved...</source>
@@ -1034,7 +1034,7 @@
     </message>
     <message>
         <source>Show OpenBoard</source>
-        <translation type="unfinished"></translation>
+        <translation>显示白板</translation>
     </message>
 </context>
 <context>
@@ -1174,11 +1174,11 @@
     </message>
     <message>
         <source>Remove Item</source>
-        <translation type="unfinished"></translation>
+        <translation>删除项目</translation>
     </message>
     <message>
         <source>Are you sure you want to remove the selected item(s) ?</source>
-        <translation type="unfinished"></translation>
+        <translation>您确定要删除选定的项目吗？</translation>
     </message>
     <message>
         <source>The document &apos;%1&apos; has been generated with a newer version of OpenBoard (%2). By opening it, you may lose some information. Do you want to proceed?</source>
@@ -1274,7 +1274,7 @@ Providing a new name will create a new document.</source>
     </message>
     <message>
         <source>My documents</source>
-        <translation type="unfinished"></translation>
+        <translation>我的文档</translation>
     </message>
 </context>
 <context>
@@ -1287,11 +1287,11 @@ Providing a new name will create a new document.</source>
     </message>
     <message>
         <source>Remove Item</source>
-        <translation type="unfinished"></translation>
+        <translation>删除项目</translation>
     </message>
     <message>
         <source>Are you sure you want to remove the selected item(s) ?</source>
-        <translation type="unfinished"></translation>
+        <translation>您确定要删除选定项目吗？</translation>
     </message>
     <message>
         <source>Copying page %1/%2</source>
@@ -1352,19 +1352,19 @@ Providing a new name will create a new document.</source>
     </message>
     <message>
         <source>Export failed</source>
-        <translation type="unfinished"></translation>
+        <translation>导出出错</translation>
     </message>
     <message>
         <source>Unable to export to the selected location. You do not have the permissions necessary to save the file.</source>
-        <translation type="unfinished"></translation>
+        <translation>无法导出到指定位置，您没有足够的权限！</translation>
     </message>
     <message>
         <source>Export failed: location not writable</source>
-        <translation type="unfinished"></translation>
+        <translation>导出出错，没有写权限！</translation>
     </message>
     <message>
         <source>Export successful.</source>
-        <translation type="unfinished"></translation>
+        <translation>导出成功</translation>
     </message>
 </context>
 <context>
@@ -1414,7 +1414,7 @@ Providing a new name will create a new document.</source>
     </message>
     <message>
         <source>Export to OpenBoard Format</source>
-        <translation type="unfinished"></translation>
+        <translation>导出为电子白板格式</translation>
     </message>
 </context>
 <context>
@@ -1425,23 +1425,23 @@ Providing a new name will create a new document.</source>
     </message>
     <message>
         <source>Failed to export...</source>
-        <translation type="unfinished"></translation>
+        <translation>导出错误！</translation>
     </message>
     <message>
         <source>Export as UBX File</source>
-        <translation type="unfinished"></translation>
+        <translation>导出为UBX文件</translation>
     </message>
     <message>
         <source>Export successful.</source>
-        <translation type="unfinished"></translation>
+        <translation>导出成功！</translation>
     </message>
     <message>
         <source>Export failed.</source>
-        <translation type="unfinished"></translation>
+        <translation>导出出错啦！</translation>
     </message>
     <message>
         <source>Export to OpenBoard UBX Format</source>
-        <translation type="unfinished"></translation>
+        <translation>导出为UBX文件格式</translation>
     </message>
 </context>
 <context>
@@ -1767,14 +1767,14 @@ Providing a new name will create a new document.</source>
     </message>
     <message>
         <source>OpenBoard (*.ubz)</source>
-        <translation type="unfinished"></translation>
+        <translation>电子白板 (*.ubz)</translation>
     </message>
 </context>
 <context>
     <name>UBImportDocumentSetAdaptor</name>
     <message>
         <source>Openboard (set of documents) (*.ubx)</source>
-        <translation type="unfinished"></translation>
+        <translation>电子白板 (*.ubx)</translation>
     </message>
 </context>
 <context>
@@ -2526,7 +2526,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>OpenBoard</source>
-        <translation type="unfinished">OpenBoard</translation>
+        <translation>电子白板</translation>
     </message>
     <message>
         <source>Restore credentials on reboot</source>
@@ -2569,7 +2569,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Show preview circle from</source>
-        <translation type="unfinished"></translation>
+        <translation>显示笔头从</translation>
     </message>
     <message>
         <source>px</source>
@@ -2630,19 +2630,19 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Creation date</source>
-        <translation type="unfinished"></translation>
+        <translation>按创建时间</translation>
     </message>
     <message>
         <source>Update date</source>
-        <translation type="unfinished"></translation>
+        <translation>按更新时间</translation>
     </message>
     <message>
         <source>Alphabetical order</source>
-        <translation type="unfinished"></translation>
+        <translation>按文件名</translation>
     </message>
     <message>
         <source>Sort Order</source>
-        <translation type="unfinished"></translation>
+        <translation>排序</translation>
     </message>
 </context>
 <context>
@@ -2805,11 +2805,19 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Use system keyboard (recommended)</source>
-        <translation type="unfinished"></translation>
+        <translation>使用系统键盘</translation>
+    </message>
+    <message>
+        <source>Documents Mode</source>
+        <translation>文档模式</translation>
+    </message>
+    <message>
+        <source>Display date column on alphabetical sort</source>
+        <translation>在名称排序中显示日期列</translation>
     </message>
     <message>
         <source>Grid</source>
-        <translation type="unfinished"></translation>
+        <translation>背景</translation>
     </message>
     <message>
         <source>Open-Sankoré Importer</source>
